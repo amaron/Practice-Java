@@ -30,7 +30,6 @@ public class Brackets {
              }
              a[2*n-l-r]=')';
              printBrackets(l,r-1,a);
-
         }
 
 
