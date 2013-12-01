@@ -1,4 +1,4 @@
-/**
+package Graphs; /**
  * Created with IntelliJ IDEA.
  * User: Karthik Sriram
  * Date: 11/17/13
@@ -7,7 +7,6 @@
  */
 import java.util.*;
 import java.lang.*;
-import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
 public class BFS
@@ -28,7 +27,7 @@ public class BFS
         }
 
        /* for(i=1;i<=n;i++){
-            for (Node t : Graph[i].children) {
+            for (Graphs.Node t : Graph[i].children) {
                  System.out.print(t.data+" ");
             }
             System.out.println();
@@ -40,7 +39,7 @@ public class BFS
 
     public static void BFS1(Node[] Graph){
         Queue<Node> q = new LinkedList<Node>();
-        q.add(Graph[1]); // starting BFS from node 1
+        q.add(Graph[1]); // starting Graphs.BFS from node 1
         int[] visited = new int[Graph.length];
         for(int i=0;i<Graph.length;i++){
                 visited[i]=0;
